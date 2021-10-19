@@ -1,0 +1,12 @@
+div {
+    box-sizing: border-box;
+    background-color: aqua;
+    border-color:white;
+    margin: -5px 5px 25px 2px;
+    height: 950px;
+}
+
+.image {
+    float: right;
+    margin-right: 30px;
+}

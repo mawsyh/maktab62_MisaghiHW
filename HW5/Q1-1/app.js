@@ -68,12 +68,13 @@ function getCars() {
   if (isNaN(carCounts)) {
     alert("Choose a number for car count!");
     getCars();
-  } else if (carCounts === 0) {
-    alert("You can not choose 0");
+  } else if (carCounts < 1) {
+    alert("You need at least 1 car to start the race!");
     getCars();
   } else {
     for (let i = 1; i <= carCounts; i++) {
-      carNames.push(prompt(`Type the name of car #${i}`));
+      let carName = prompt(`Type the name of car #${i}`);
+      carName === "" ? i-- : carNames.push(carName);
     }
   }
   return carNames;

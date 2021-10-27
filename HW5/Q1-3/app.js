@@ -176,7 +176,7 @@ update({
 });
 read(result);
 // Example #2: a partly update on uid #7 : promoting id 7 position
-console.log(`---Example #2 for Update:`);
+console.log(`---Example #2 for Update:(promoting a user)`);
 update({
   uid: 6,
   position: "Server Full Admin",
@@ -195,6 +195,7 @@ function remove(uid) {
   }
   let removableResult = JSON.parse(JSON.stringify(result));
   removableResult.splice(removableIndex, 1);
+  console.log(`Succesfully Deleted!`);
   return removableResult;
 }
 //example #1 not correct format
@@ -205,7 +206,4 @@ console.log(`---Example #2 for Remove:`);
 console.log(remove(10));
 //example #3 removin uid 7
 console.log(`---Example #3 for Remove:`);
-console.log(remove(7));
-//example #4 removing uid 4
-console.log(`---Example #4 for Remove:`);
 console.log(remove(7));

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.black {
+  display: block;
+  width: 450px;
+  height: 500px;
+  background-color: #000000;
+  position: relative;
+}
+
+.yellow {
+  display: block;
+  width: 60%;
+  height: 280px;
+  background-color: #e5ff00;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.red {
+  display: block;
+  width: 35%;
+  height: 100px;
+  background-color: #ff0000;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}

@@ -1,3 +1,4 @@
+let newList;
 function flatter(list) {
   newList = [].concat.apply([], list);
   for (let i = 0; i < newList.length; i++) {

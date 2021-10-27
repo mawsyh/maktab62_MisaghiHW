@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main-container h1 {
+  color: #fff;
+  margin: 2rem;
+}
+
+.main-container li {
+  list-style-type: none;
+  padding: 0.3rem;
+}
+
+.main-container .start {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: #e5e5;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 2rem;
+  border: none;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.cast {
+  margin-top: 40px;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  width: 800px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: initial;
+  word-wrap: break-word;
+}
+
+.winner-announcer {
+  margin-top: 40px;
+  color: rgb(142, 219, 255);
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 3px;
+}

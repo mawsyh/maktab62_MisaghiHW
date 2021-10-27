@@ -15,7 +15,7 @@ function firstLayerOfDepthDetector(arr) {
 
 // if the depth was bigger than 2
 function plus2DepthFinder(list) {
-  newList = [].concat.apply([], list);
+  let newList = [].concat.apply([], list);
   for (let i = 0; i < newList.length; i++) {
     if (Array.isArray(newList[i])) {
       tempDepth++;
@@ -29,4 +29,6 @@ console.log(firstLayerOfDepthDetector([1, 2, 20]));
 console.log(
   firstLayerOfDepthDetector([1, [3, [5, 6], 7, [8, [9]], 10], 11, [12, 14], 0])
 );
-console.log(firstLayerOfDepthDetector([10, [25, 13], [14, [55]], 2]));
+console.log(
+  firstLayerOfDepthDetector([10, [25, 13], [14, [33, 11, [2, [1]], [55]]], 2])
+);

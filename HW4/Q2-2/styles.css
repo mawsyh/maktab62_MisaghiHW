@@ -1,18 +1,19 @@
-html,
-body {
+* {
   background-color: #463938;
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .background {
   padding: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   background-color: #463938;
 }
+
 .block-kerem {
   background-color: #fff9e6;
   width: 30%;
